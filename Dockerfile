@@ -1,4 +1,4 @@
-FROM daocloud.io/someetinc/mobile-base:docker-base.0.0.1
+FROM daocloud.io/someetinc/pc_official_base:docker-base.0.0.1
 
 # Copy the working dir to the image's web root
 COPY . /var/www/html
