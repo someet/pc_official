@@ -15,3 +15,7 @@ dependencies:
 test:
   override:
     - cd tests; codecept --no-interaction --no-colors --silent --fail-fast --no-ansi run
+
+notify:
+  webhooks:
+    - url: https://hooks.pubu.im/services/g6rd7ve68x86ueg
