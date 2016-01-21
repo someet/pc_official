@@ -34,7 +34,7 @@
     <div id="js_scene_footer" class="js_scene_container">
         <div class="js_scene_footer">
             <p class="js_footer_info">©2016 Beijing Someet Technology Co., Ltd. All rights reserved. 备案号：京ICP备15052155号</p>
-            <a class="js_footer_link" href="mailto:hr@someet.so">联系我们</a>
+            <a class="js_footer_link" href="mailto:hr@someet.so">联系我们1</a>
         </div>
     </div>
 </div>
