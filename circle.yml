@@ -8,13 +8,13 @@ dependencies:
     - composer install --prefer-source --no-interaction
     - composer global require --prefer-source --no-interaction "codeception/codeception=2.0.*" "codeception/specify=*" "codeception/verify=*"
     - ./init  --env=Tests --overwrite=y
-    - cd tests; ../vendor/bin/codecept build ; cd -
+    - cd tests; codecept build ; cd -
     - ./tests/codeception/bin/yii migrate --interactive=0
     - echo "memory_limit = 512M" > ~/.phpenv/versions/$(phpenv global)/etc/conf.d/memory.ini
 
 test:
   override:
-    - cd tests; ../vendor/bin/codecept --no-interaction --no-colors --silent --fail-fast --no-ansi run
+    - cd tests; codecept --no-interaction --no-colors --silent --fail-fast --no-ansi run
 
 notify:
   webhooks:
