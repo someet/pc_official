@@ -4,7 +4,7 @@
 	"keywords": ["yii2", "framework", "docker", "application template"],
 	"type": "project",
 	"license": "MIT",
-	"minimum-stability": "dev",
+	"minimum-stability": "stable",
 	"require": {
 		"php": ">=5.4.0",
 		"yiisoft/yii2": "2.0.6",
