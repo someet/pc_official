@@ -4,8 +4,6 @@ machine:
 
 dependencies:
   pre:
-    - composer update --lock
-    - composer install --prefer-source --no-interaction
     - composer global require --prefer-source --no-interaction "codeception/codeception=2.0.*" "codeception/specify=*" "codeception/verify=*"
     - ./init  --env=Tests --overwrite=y
     - cd tests; codecept build ; cd -
