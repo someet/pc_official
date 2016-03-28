@@ -4,7 +4,7 @@ machine:
 
 dependencies:
   pre:
-    - composer global require --prefer-source --no-interaction "codeception/codeception=2.0.*" "codeception/specify=*" "codeception/verify=*"
+    - composer install --prefer-source --no-interaction
     - ./init  --env=Tests --overwrite=y
     - cd tests; codecept build ; cd -
     - ./tests/codeception/bin/yii migrate --interactive=0
