@@ -6,6 +6,7 @@ dependencies:
   override:
     - docker info
     - docker-compose version
+    - docker build -f Dockerfile.base -t daocloud.io/someetinc/pc_official_base:docker-base.0.0.1 .
 
 test:
   override:
