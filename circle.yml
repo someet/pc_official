@@ -10,4 +10,5 @@ dependencies:
 
 test:
   override:
-    - cd tests; docker-compose up
+    - cd tests; docker-compose run test ./yii migrate --interactive=0 ; cd ../
+    - cd tests; docker-compose run test ; cd ../
