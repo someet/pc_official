@@ -8,10 +8,9 @@ COPY . /var/www/html
 # empty dirs and set right permissions inside the container.
 
 # Composer packages are installed first. This will only add packages
-RUN composer self-update --no-progress \
+RUN composer global require fxp/composer-asset-plugin:~1.1.3 --no-plugins  \
+    && composer self-update --no-progress \
     && composer install --no-progress \
-    # 优化自动加载
-    && composer dump-autoload --optimize \
     && mkdir runtime web/assets \
     && chown www-data:www-data runtime web/assets
 

@@ -6,9 +6,6 @@ COPY php/redis.tgz /home/redis.tgz
 RUN pecl install /home/redis.tgz \
     && echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
 
-# use China proxy
-RUN composer config -g repositories.packagist composer http://packagist.phpcomposer.com
-
 # 安装 NewRelic
 RUN mkdir -p /etc/apt/sources.list.d \
     && echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' \
