@@ -22,6 +22,8 @@
         var ua =  navigator.userAgent;
         if(isMobileDevice(ua)){
             window.location.href='/site/index-wap';
+        }else{
+            window.location.href='/index.php';
         }
     </script>
 </head>
